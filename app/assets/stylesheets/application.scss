@@ -1,0 +1,97 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  height: 80px;
+}
+.banner {
+  background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2019/08/Cover-1440x625-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+}
+.card{
+  background-image: url("https://as2.ftcdn.net/v2/jpg/00/48/32/93/1000_F_48329327_TdTQdctstrEYiT2pB891uTJEjLsYQFqj.jpg");
+  background-size: cover;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+.list-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(343px, 50%, 800px);
+  a{
+    margin: 0;
+  }
+  h1{
+    margin: 0;
+  }
+}
+.login{
+  border: 2px solid #51BFE1;
+  font-weight: 200;
+  font-size: 18px;
+  padding: 5px 20px;
+  color: #51BFE1;
+  border-radius: 5px;
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  input[type="text"]{
+    width: 50%;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #4BDB88;
+    border-right: none;
+    padding: 20px
+  }
+  input[type="text"]::placeholder{
+    color: lightgray;
+  }
+  label{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  input[type="submit"]{
+    height: 42px;
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+    color: white;
+  }
+}
+form{
+  width: 50%;
+}
+#name{
+  text-transform: capitalize;
+}
